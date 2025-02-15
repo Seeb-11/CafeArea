@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "664521843134",
+    "project_id": "flutterapp-e134f",
+    "storage_bucket": "flutterapp-e134f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664521843134:android:4c7a9d14f3c2673ad159ef",
+        "android_client_info": {
+          "package_name": "com.example.code_cafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv-xrSvg7StzZegL38XpUeLf8nI8Q0IKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
