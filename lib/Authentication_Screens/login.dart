@@ -47,11 +47,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     Text(
                       "Welcome Back",
-                      style: CafeText().HeadLine_Text(),
+                      style: CafeText().headLineText()
                     ),
                     Text(
                       "Discover unlimited choices and Unmatched convenience.",
-                      style: CafeText().Body_Text(),
+                      style: CafeText().bodyText()
                     ),
                     const SizedBox(
                       height: 20,
@@ -64,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: 
                           const TextStyle(color: Colors.white),
                           cursorColor: Colors.white70,
-                          decoration: CafeText().Input_dec(labelTxt: "Email", hintTxt: "Email", preIcon: const Icon(
+                          decoration: CafeText().inputDecoration(labelTxt: "Email", preIcon: const Icon(
                              Icons.email_outlined,
             color: Colors.white,
                           )),
@@ -82,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: const TextStyle(color: Colors.white),
                           cursorColor: Colors.white70,
                           obscureText: true,
-                          decoration: CafeText().Input_dec(labelTxt: "Password", hintTxt: "Password", preIcon:const  Icon( Iconsax.password_check4,
+                          decoration: CafeText().inputDecoration(labelTxt: "Password", preIcon:const  Icon( Iconsax.password_check4,
                                 color: Colors.white,))
 
                         ),

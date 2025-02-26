@@ -1,26 +1,34 @@
 import 'package:flutter/material.dart';
 
 class CafeText {
-  Button_Text_style() {
-    TextStyle(
+  // ignore: non_constant_identifier_names
+  TextStyle buttonTextStyle() {
+    return
+    const TextStyle(
         fontSize: 22,
         fontWeight: FontWeight.normal,
         color: Colors.white,
         letterSpacing: 4);
   }
 
-  HeadLine_Text() {
-    TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold);
+  TextStyle headLineText() {
+    return
+    const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold);
   }
 
-  Body_Text() {
-    TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.normal);
+  TextStyle bodyText() {
+    return
+    const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.normal);
   }
 
   
               //  TextField Decorations
 
-    Input_dec({required String labelTxt, required String hintTxt, required Icon preIcon}) {
+    
+    InputDecoration inputDecoration({required String labelTxt, required Icon preIcon}) {
+      String hintText =labelTxt;
+      return
+    
       InputDecoration(
           labelText: labelTxt,
           labelStyle: const TextStyle(
@@ -37,7 +45,7 @@ class CafeText {
             borderSide: BorderSide(color: Colors.white),
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
-          hintText: hintTxt,
+          hintText:hintText ,
 
 
           prefixIcon: preIcon,

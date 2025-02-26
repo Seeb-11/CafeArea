@@ -28,7 +28,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           children: [
                Container(
                 margin: const EdgeInsets.only(top: 100),
-                 child:  Text("Let's create your account",style: CafeText().HeadLine_Text()
+                 child:  Text("Let's create your account",style: CafeText().headLineText()
                  
                  ),
                ),
@@ -46,9 +46,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     width: 155,
                     child: TextField(
                             // controller: ,
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                             cursorColor: Colors.white70,
-                            decoration:CafeText().Input_dec(labelTxt: "First Name", hintTxt: "First Name", preIcon:const  Icon(
+                            decoration:CafeText().inputDecoration(labelTxt: "First Name",preIcon:const  Icon(
                               Icons.person,
                                   color: Colors.white,
                             ))
@@ -58,33 +58,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             // ignore: avoid_unnecessary_containers
                             Container(
                               width: 155,
-                              child: const TextField(
+                              child:  TextField(
                               // controller: ,
                               style: TextStyle(color: Colors.white),
                               cursorColor: Colors.white70,
-                              decoration: InputDecoration(
-                                  labelText: 'Last Name',
-                                  labelStyle: TextStyle(
+                              decoration: CafeText().inputDecoration(labelTxt: "Last Name",  preIcon:const  Icon(
+                                Icons.person,
                                     color: Colors.white,
-                                  ),
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Colors.white70,
-                                      width: 2,
-                                    ),
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(10)),
-                                  ),
-                                  border: OutlineInputBorder(
-                                    borderSide: BorderSide(color: Colors.white),
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(10)),
-                                  ),
-                                  hintText: "Last Name",
-                                  prefixIcon: Icon(
-                                    Icons.person,
-                                    color: Colors.white,
-                                  )),
+                              ))
                                                       ),                         
                             ),
                                 
@@ -95,29 +76,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                      controller: userNameController,
                     style: const TextStyle(color: Colors.white),
                     cursorColor: Colors.white70,
-                    decoration: const InputDecoration(
-                        labelText: 'Username',
-                        labelStyle: TextStyle(
+                    decoration: CafeText().inputDecoration(labelTxt:"Username", preIcon:const  Icon(
+                       Icons.person,
                           color: Colors.white,
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.white70,
-                            width: 2,
-                          ),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        hintText: "Username",
-                        prefixIcon: Icon(
-                          Icons.person,
-                          color: Colors.white,
-                        )),
+                    ))
                                             ),
                                             
                  const SizedBox(height: 20),
@@ -125,60 +87,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     controller: emailController,
                     style: const TextStyle(color: Colors.white),
                     cursorColor: Colors.white70,
-                    decoration: const InputDecoration(
-                        labelText: 'E-Mail',
-                        labelStyle: TextStyle(
-                          color: Colors.white,
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.white70,
-                            width: 2,
-                          ),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        hintText: "E-Mail",
-                        prefixIcon: Icon(
-                          Icons.email_outlined,
-                          color: Colors.white,
-                        )),
+                    decoration: CafeText().inputDecoration(labelTxt: "E-Mail", preIcon: const  Icon( Icons.email_outlined,
+                          color: Colors.white,))
                                             ),
                                             
                  const SizedBox(height: 20),
-                    const TextField(
+                     TextField(
                       keyboardType:TextInputType.number,
                     // controller: ,
                     style: TextStyle(color: Colors.white),
                     cursorColor: Colors.white70,
-                    decoration: InputDecoration(
-                        labelText: 'Phone Number',
-                        labelStyle: TextStyle(
+                    decoration: CafeText().inputDecoration(labelTxt: "Phone Number", preIcon:const  Icon(
+                       Icons.phone,
                           color: Colors.white,
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.white70,
-                            width: 2,
-                          ),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        hintText: "Phone Number",
-                        prefixIcon: Icon(
-                          Icons.phone,
-                          color: Colors.white,
-                        )),
+                    ))
                                             ),
                    const SizedBox(height: 20),
                      TextField(
@@ -186,29 +108,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     controller:passController ,
                     style: const TextStyle(color: Colors.white),
                     cursorColor: Colors.white70,
-                    decoration: const InputDecoration(
-                        labelText: 'Password',
-                        labelStyle: TextStyle(
+                    decoration: CafeText().inputDecoration(labelTxt: "Password", preIcon: const  Icon(
+                      Icons.password,
                           color: Colors.white,
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.white70,
-                            width: 2,
-                          ),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10)),
-                        ),
-                        hintText: "Password",
-                        prefixIcon: Icon(
-                          Icons.password,
-                          color: Colors.white,
-                        )),
+                    ))
                                             ),
 
                          const SizedBox(height: 20,),
