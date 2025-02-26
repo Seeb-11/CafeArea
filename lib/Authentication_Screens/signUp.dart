@@ -3,6 +3,7 @@ import 'package:code_cafe/Firebase/Services/auth_service.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
+  
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
 }
