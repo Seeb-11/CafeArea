@@ -1,5 +1,6 @@
 // ignore_for_file: sized_box_for_whitespace
 import 'package:code_cafe/Authentication_Screens/signUp.dart';
+import 'package:code_cafe/Common/Widdgets/text.dart';
 import 'package:code_cafe/Firebase/Services/auth_service.dart';
 
 
@@ -44,19 +45,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Welcome Back",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold),
+                      style: CafeText().HeadLine_Text(),
                     ),
-                    const Text(
+                    Text(
                       "Discover unlimited choices and Unmatched convenience.",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                          fontWeight: FontWeight.normal),
+                      style: CafeText().Body_Text(),
                     ),
                     const SizedBox(
                       height: 20,
@@ -65,36 +60,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Column(
                       children: [
                         TextField(
-
                          controller: emailController,
-
-                          style: const TextStyle(color: Colors.white),
+                          style: 
+                          const TextStyle(color: Colors.white),
                           cursorColor: Colors.white70,
-                          decoration: const InputDecoration(
-                              labelText: 'Email',
-                              labelStyle: TextStyle(
-                                color: Colors.white,
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Colors.white70,
-                                  
-                                  width: 2,
-                                ),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(10)),
-                              ),
-                              border: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(10)),
-                              ),
-                              hintText: "Email",
-                              prefixIcon: Icon(
-                                Icons.email_outlined,
-                                color: Colors.white,
-                              )),
+                          decoration: CafeText().Input_dec(labelTxt: "Email", hintTxt: "Email", preIcon: const Icon(
+                             Icons.email_outlined,
+            color: Colors.white,
+                          )),
+                 
+
                         ),
+
+
                         const SizedBox(
                           height: 20,
                         ),
@@ -104,29 +82,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: const TextStyle(color: Colors.white),
                           cursorColor: Colors.white70,
                           obscureText: true,
-                          decoration: const InputDecoration(
-                              labelText: 'Password',
-                              labelStyle: TextStyle(
-                                color: Colors.white,
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Colors.white70,
-                                  width: 2,
-                                ),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(10)),
-                              ),
-                              border: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(10)),
-                              ),
-                              hintText: "Password",
-                              prefixIcon: Icon(
-                                Iconsax.password_check4,
-                                color: Colors.white,
-                              )),
+                          decoration: CafeText().Input_dec(labelTxt: "Password", hintTxt: "Password", preIcon:const  Icon( Iconsax.password_check4,
+                                color: Colors.white,))
+
                         ),
                       ],
                     )),

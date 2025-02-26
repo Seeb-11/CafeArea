@@ -1,4 +1,5 @@
 
+import 'package:code_cafe/Common/Widdgets/text.dart';
 import 'package:code_cafe/Firebase/Services/auth_service.dart';
 import 'package:flutter/material.dart';
 
@@ -27,11 +28,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
           children: [
                Container(
                 margin: const EdgeInsets.only(top: 100),
-                 child: const Text("Let's create your account",style: TextStyle(
-                    color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold
-                 ),),
+                 child:  Text("Let's create your account",style: CafeText().HeadLine_Text()
+                 
+                 ),
                ),
           
                Container(
@@ -45,33 +44,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                    // ignore: avoid_unnecessary_containers
                    Container(
                     width: 155,
-                    child:const TextField(
+                    child: TextField(
                             // controller: ,
                             style: TextStyle(color: Colors.white),
                             cursorColor: Colors.white70,
-                            decoration: InputDecoration(
-                                labelText: 'First Name',
-                                labelStyle: TextStyle(
+                            decoration:CafeText().Input_dec(labelTxt: "First Name", hintTxt: "First Name", preIcon:const  Icon(
+                              Icons.person,
                                   color: Colors.white,
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Colors.white70,
-                                    width: 2,
-                                  ),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(10)),
-                                ),
-                                border: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Colors.white),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(10)),
-                                ),
-                                hintText: "First Name",
-                                prefixIcon: Icon(
-                                  Icons.person,
-                                  color: Colors.white,
-                                )),
+                            ))
                           ),
                    ),
                  
