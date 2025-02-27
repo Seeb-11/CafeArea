@@ -1,6 +1,7 @@
 // ignore_for_file: sized_box_for_whitespace
 import 'package:code_cafe/Authentication_Screens/signUp.dart';
 import 'package:code_cafe/Common/Widgets/text.dart';
+import 'package:code_cafe/Common/textField.dart';
 import 'package:code_cafe/Firebase/Services/auth_service.dart';
 
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           controller: emailController,
                           style: const TextStyle(color: Colors.white),
                           cursorColor: Colors.white70,
-                          decoration: CafeText().inputDecoration(
+                          decoration: CafeTextField().inputDecoration(
                               labelTxt: "Email",
                               preIcon: const Icon(
                                 Icons.email_outlined,
@@ -70,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: const TextStyle(color: Colors.white),
                             cursorColor: Colors.white70,
                             obscureText: true,
-                            decoration: CafeText().inputDecoration(
+                            decoration: CafeTextField().inputDecoration(
                                 labelTxt: "Password",
                                 preIcon: const Icon(
                                   Iconsax.password_check4,

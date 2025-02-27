@@ -1,4 +1,5 @@
 import 'package:code_cafe/Common/Widgets/text.dart';
+import 'package:code_cafe/Common/textField.dart';
 import 'package:code_cafe/Firebase/Services/auth_service.dart';
 import 'package:flutter/material.dart';
 
@@ -43,9 +44,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           width: 155,
                           child: TextField(
                               // controller: ,
-                              style: const TextStyle(color: Colors.white),
+                              style: const 
+                              TextStyle(
+                                color: Colors.white),
+
                               cursorColor: Colors.white70,
-                              decoration: CafeText().inputDecoration(
+                              decoration: CafeTextField().inputDecoration(
                                   labelTxt: "First Name",
                                   preIcon: const Icon(
                                     Icons.person,
@@ -60,7 +64,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               // controller: ,
                               style: const TextStyle(color: Colors.white),
                               cursorColor: Colors.white70,
-                              decoration: CafeText().inputDecoration(
+                              decoration: CafeTextField().inputDecoration(
                                   labelTxt: "Last Name",
                                   preIcon: const Icon(
                                     Icons.person,
@@ -70,23 +74,41 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    TextField(
-                        controller: userNameController,
-                        style: const TextStyle(color: Colors.white),
-                        cursorColor: Colors.white70,
-                        decoration: CafeText().inputDecoration(
-                            labelTxt: "Username",
-                            preIcon: const Icon(
-                              Icons.person,
-                              color: Colors.white,
-                            ))),
+
+                    // TextField(
+                    //     controller: userNameController,
+                    //     style: const
+                    //      TextStyle(color: Colors.white),
+                         
+                    //     cursorColor: Colors.white70,
+                    //     decoration: CafeText().inputDecoration(
+                    //         labelTxt: "Username",
+                    //         preIcon: const Icon(
+                    //           Icons.person,
+                    //           color: Colors.white,
+                    //         ))),
+                    CafeTextField().textFieldCommon(contlr: userNameController,
+                     fieldStyle: const TextStyle(color: Colors.white),
+                     
+                    curColor: Colors.white, 
+                  
+                     
+                 decor: CafeTextField().inputDecoration(labelTxt: "Username", preIcon: const Icon(
+                 Icons.person,
+                             color: Colors.white,
+                     ))
+                     ),
+
+
+
+
 
                     const SizedBox(height: 20),
                     TextField(
                         controller: emailController,
                         style: const TextStyle(color: Colors.white),
                         cursorColor: Colors.white70,
-                        decoration: CafeText().inputDecoration(
+                        decoration: CafeTextField().inputDecoration(
                             labelTxt: "E-Mail",
                             preIcon: const Icon(
                               Icons.email_outlined,
@@ -99,7 +121,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         // controller: ,
                         style: const TextStyle(color: Colors.white),
                         cursorColor: Colors.white70,
-                        decoration: CafeText().inputDecoration(
+                        decoration: CafeTextField().inputDecoration(
                             labelTxt: "Phone Number",
                             preIcon: const Icon(
                               Icons.phone,
@@ -111,7 +133,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         controller: passController,
                         style: const TextStyle(color: Colors.white),
                         cursorColor: Colors.white70,
-                        decoration: CafeText().inputDecoration(
+                        decoration: CafeTextField().inputDecoration(
                             labelTxt: "Password",
                             preIcon: const Icon(
                               Icons.password,
