@@ -39,15 +39,18 @@ dependencies:
   firebase_core: ^3.6.0
   google_sign_in: ^6.2.2
   flutter_facebook_auth: ^7.1.1
-  get: ^4.6.6
-  carousel_slider: ^5.0.0
-  smooth_page_indicator: ^1.2.0+3
- 
+  get: ^4.7.2
+  carousel_slider: ^5.0.0 
   sqflite: ^2.4.1
   path_provider: ^2.1.5 
   path: ^1.9.0
   flutter_login_facebook: ^2.0.1
   flutter_launcher_icons: ^0.14.3
+  status_alert: ^1.0.1
+  http: ^1.3.0
+  convert: ^3.1.2
+  flutter_native_splash: ^2.4.4
+  smooth_page_indicator: ^1.2.1
   
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -80,9 +83,8 @@ flutter:
     - assets/
     - assets/images/
     - assets/images/capCoffee/
-
-    - assets/animation/
     - assets/icons/
+    - assets/images/onBoarding/
 
 
 
